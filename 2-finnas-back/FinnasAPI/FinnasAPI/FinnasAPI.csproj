@@ -4,6 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AllowMissingPrunePackageData>True</AllowMissingPrunePackageData>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,14 +15,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Infra\InfraDAL\InfraDbService\InfraDbService.csproj" />
-    <ProjectReference Include="..\..\FinnasDbService\FinnasDbService\FinnasDbService.csproj" />
-    <ProjectReference Include="..\..\FinnasLogicService\FinnasLogicService\FinnasLogicService.csproj" />
+    <Reference Include="FinnasLogicService">
+      <HintPath>../../../../bin/finnas/net10.0/FinnasLogicService.dll</HintPath>
+    </Reference>
+    <Reference Include="FinnasDbService">
+      <HintPath>../../../../bin/finnas/net10.0/FinnasDbService.dll</HintPath>
+    </Reference>
+    <Reference Include="InfraDbService">
+      <HintPath>../../../../bin/infra/net10.0/InfraDbService.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="InfraAuthWS">
-      <HintPath>..\..\..\..\Infra\InfraAuthWS\InfraAuthWS\bin\Debug\net10.0\InfraAuthWS.dll</HintPath>
+      <HintPath>../../../../bin/infra/net10.0/InfraAuthWS.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -4,6 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <OutputPath>../../../../bin/finnas</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,8 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Infra\InfraDAL\InfraDbService\InfraDbService.csproj" />
-    <ProjectReference Include="..\..\FinnasDbService\FinnasDbService\FinnasDbService.csproj" />
+    <Reference Include="FinnasDbService">
+      <HintPath>../../../../bin/finnas/net10.0/FinnasDbService.dll</HintPath>
+    </Reference>
+    <Reference Include="InfraDbService">
+      <HintPath>../../../../bin/infra/net10.0/InfraDbService.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
