@@ -1,8 +1,4 @@
 ﻿using InfraDbService;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.Data.SqlClient;
 using FinnasDbService;
 using System.Data;
 
